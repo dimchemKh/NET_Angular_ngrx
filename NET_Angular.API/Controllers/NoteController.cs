@@ -12,26 +12,26 @@ namespace NET_Angular_Aionys.Web.Controllers
         {
             _noteService = noteService;
         }
-        [HttpGet("GetNotes")]
-        public async Task<IActionResult> GetNotes(string noteId = null)
+        [HttpGet("Get")]
+        public async Task<IActionResult> Get(string noteId = null)
         {
             var response = await _noteService.GetNotesAsync(noteId);
             return Ok(response);
         }
-        [HttpPost("CreateNotes")]
-        public async Task<IActionResult> CreateNotes(CreateUpdateNoteModel model)
+        [HttpPost("Create")]
+        public async Task<IActionResult> Create(CreateUpdateNoteModel model)
         {
             await _noteService.CreateNoteAsync(model);
             return Ok();
         }
-        [HttpPut("UpdateNotes")]
-        public async Task<IActionResult> UpdateNotes(CreateUpdateNoteModel model)
+        [HttpPut("Update")]
+        public async Task<IActionResult> Update(CreateUpdateNoteModel model)
         {
             await _noteService.UpdateNoteAsync(model);
             return Ok();
         }
-        [HttpDelete("DeleteNotes")]
-        public async Task<IActionResult> DeleteNotes(string noteId)
+        [HttpDelete("Delete")]
+        public async Task<IActionResult> Delete(string noteId)
         {
             await _noteService.RemoveAsync(noteId);
             return Ok();
