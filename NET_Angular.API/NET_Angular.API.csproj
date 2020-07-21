@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NET_Angular.BLL\NET_Angular.BLL.csproj" />
+    <ProjectReference Include="..\NET_Angular.WEB\NET_Angular.WEB.csproj" />
   </ItemGroup>
 
 

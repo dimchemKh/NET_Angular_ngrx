@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace NET_Angular_ngrx
+namespace NET_Angular.WEB
 {
     public class Program
     {
